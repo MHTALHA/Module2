@@ -1,0 +1,142 @@
+*{
+    margin: 0ex;
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    font-family: 'Arvo',courier,serif;
+   
+}
+.navbar_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar_items a {
+    text-decoration: none;
+    margin: 0 20px ;
+    padding: 0;
+    color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/hero-image.jpg);
+    color: white;
+    height: 600px;
+    
+}
+#home a{
+    text-decoration: none;
+    margin: 20px;
+}
+#home h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+    
+}
+#home p{
+    padding: 0 10px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-size: 21px;
+    width: 50%;
+    
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding: 10px 16px;
+    line-height: 1.33;
+    border-radius: 6px;
+    text-decoration: none;
+}
+#who{
+    text-align: center;
+    padding: 30px 15px 15px 30px;
+
+}
+#who h2{
+    color:#e74c3c;
+    font-family: 'Arvo',courier,serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ hr{
+    border-top:1px solid #e74c3d;
+    width:160px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+#who p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+#get-involved{
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container h2,h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 30px;
+    color: #e74c3c;
+    font-family: 'Arvo', courier, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+footer {
+
+    background-color: #f74c3c;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
