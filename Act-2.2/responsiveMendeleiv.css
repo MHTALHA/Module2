@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+body {
+    background-color: #F2EFE9;
+    font-family: 'Muli', sans-serif;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .title {
+    display: none;
+  } 
+
+ 
+  .group-label {
+    display: none;
+    transition: 75ms ease-out;
+  }
+  .full-table {
+    margin: 0 auto 20vh;
+    width: 100vw;
+    position: relative;
+  }  
+  .main-table {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 2vw;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+  .element {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+    margin: 1px;
+    border-radius: 2px;
+    transition: 0.2s linear;
+  }
+  .number {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    font-size: 1.2vw;
+    transition: inherit;
+  }
+  
+
+  .symbol {
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    font-size: 1vw;
+    transition: inherit;
+  }
+  /* .name {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 8%;
+    font-size: 1.4vw;
+    transition: 250ms linear;
+    opacity: 0;
+  } */
+
+  .number {
+    font-size: 1.7vw;
+  }
+  .symbol {
+    left: 8%;
+    bottom: 26%;
+    font-size: 3.2vw;
+  }
+  .f-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    padding-left: calc(12vw + 6px);
+    padding-right:  calc(12vw  + 2px);;
+    margin-bottom: 20vh;
+  }
+  .series {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: 761px){
+    .group-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6vw;
+        width: 42%;
+        font-size: 3.5vw;
+        border-radius: 3vw;
+      }
+      .title {
+        display: inline;
+        font-size: 6vw;
+        margin: 3vh 0 2vh;
+        color: #071108;
+      }
+      .element:hover {
+        transition-delay: 30ms;
+        cursor: pointer;
+        height: calc(5vw * 1.97);
+        width: calc(5vw * 1.97);
+  }
+  .symbol {
+    font-size: 3.2vw;
+    bottom: 26%;
+  }
+  .number {
+    font-size: 1.7vw;
+  }
+
+}
+.other-non-metal {
+    background-color: #1AFF00;
+  }
+  .alkali-metal {
+    background-color: #FF0C00;
+  }
+  .alkaline-earth-metal {
+    background-color: #FF6700;
+  }
+  .transition-metal {
+    background-color: #FF54A4;
+  }
+  .metalloid {
+    background-color: #FFB800;
+  }
+  .post-transition-metal {
+    background-color: #FF762E;
+  }
+  .halogen {
+    background-color: #00EEFF;
+  }
+  .noble-gas {
+    background-color: #0E94FF;
+  }
+  .rare-earth {
+    background-color: #FF006A;
+  }
+  .actinoid {
+    background-color: #FF00C6;
+  }
+  
+
+  
