@@ -55,27 +55,20 @@ body {
 
   .symbol {
     position: absolute;
-    bottom: 8%;
+    bottom: 4%;
     left: 8%;
     font-size: 1vw;
     transition: inherit;
   }
-  /* .name {
-    display: flex;
-    align-self: flex-end;
-    margin-bottom: 8%;
-    font-size: 1.4vw;
-    transition: 250ms linear;
-    opacity: 0;
-  } */
+ 
 
   .number {
     font-size: 1.7vw;
   }
   .symbol {
     left: 8%;
-    bottom: 26%;
-    font-size: 3.2vw;
+    bottom: 10%;
+    font-size: 2vw;
   }
   .f-block {
     position: absolute;
@@ -112,8 +105,8 @@ body {
         width: calc(5vw * 1.97);
   }
   .symbol {
-    font-size: 3.2vw;
-    bottom: 26%;
+    font-size: 2vw;
+    align-self: center;
   }
   .number {
     font-size: 1.7vw;
