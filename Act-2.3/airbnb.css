@@ -17,3 +17,8 @@ body{
 .card{
     margin-bottom: 10px;
 }
+.card-footer a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    text-align: center;
+}
