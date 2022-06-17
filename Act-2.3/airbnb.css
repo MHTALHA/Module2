@@ -1,0 +1,19 @@
+*{
+    margin: 0rem;
+    font-family: inherit;
+}
+.navbar{
+    border-bottom: 1px solid rgb(220, 217, 217);
+}
+.navbar-brand{
+    margin-right: 40px;
+}
+body{
+    margin: 50px;
+}
+.fa-solid{
+    color: red;
+}
+.card{
+    margin-bottom: 10px;
+}
