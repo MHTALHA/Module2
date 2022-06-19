@@ -6,17 +6,27 @@
     border-bottom: 1px solid rgb(220, 217, 217);
     background-color: white;
 }
-.navbar-brand{
-    margin-right: 40px;
-}
-body{
-    margin: 50px;
-}
-.fa-solid{
+
+
+.bi-search-heart-fill{
     color: red;
 }
+.link:hover{
+background-color: rgb(221, 217, 217);
+border-radius: 2rem;
+}
+.border-2{
+    height: 1.9rem;   
+
+}
+
 .card{
     margin-bottom: 10px;
+}
+.jumbotron{
+    height: 10rem;
+    background-color: white;
+    margin-bottom: 3rem;
 }
 .card-footer a{
     text-decoration: none;
