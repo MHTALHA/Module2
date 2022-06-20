@@ -2,23 +2,127 @@
   margin: 0;
 }
 
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 8px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#grille {
+  width: 20px;
+  height: auto;
+  opacity: 0.9;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+#grille:hover {
+  opacity: 1;
+  border: 1px rgb(141, 134, 134);
+  box-shadow: 1px 2px 2px 1px rgba(117, 46, 46, 0.25);
+}
+
+.item-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.nav {
+  margin: 10px;
+}
+
+.link {
+  color: #222;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: gill Sans;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #0a0a0a;
+}
+
+.item-2 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+}
+
+.item-3 {
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-around;
+  margin: auto;
+  height: auto;
+  margin-left: 12px;
+  font-family: sans-serif;
+}
+.item-3 .button1 {
+  background-color: rgb(10, 103, 156);
+  margin-left: 6px;
+  margin-right: 6px;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.item-3 .button1:hover {
+  background-color: rgb(89, 177, 228);
+  border: 1px solid lightgray;
+  box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.25);
+}
+.item-3 .button2 {
+  background-color: rgb(253, 254, 255);
+  font-size: 13px;
+  color: rgb(77, 73, 73);
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.bi-chevron-down {
+  color: #222;
+}
+
+.navbar {
+  width: 100% !important;
+  border-bottom: 1px solid rgb(184, 184, 184);
+}
+
 .content-1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 3.75rem;
   margin-right: 200px;
   margin-left: 200px;
 }
 .content-1 h1 {
+  font-style: italic;
+  font-size: 3rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .content-1 img {
   width: 100%;
   height: auto;
+  max-width: 900px;
   margin-bottom: 20px;
+  align-self: flex-start;
 }
 .content-1 p {
   align-self: flex-start;
@@ -28,6 +132,235 @@
 }
 .content-1 .toolBar {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 2rem;
+  border-top: 2px solid rgb(231, 228, 228);
+  gap: 8px;
+}
+.content-1 .toolBar button {
+  border: 1px solid rgb(172, 170, 170);
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: small;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.content {
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+.content .final-p {
+  font-size: 12px;
+  color: #666666;
+}
+.content .final-p span {
+  text-decoration: underline;
+}
+.content .final-p span:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.content img {
+  width: 600px;
+}
+.content h5 {
+  margin: 0;
+  font-size: 15px;
+}
+.content h5 span {
+  text-decoration: underline;
+}
+.content h6 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+.content p {
+  font-size: 20px;
+  text-align: justify;
+}
+.content p a {
+  color: #326891;
+}
+.content .thanks {
+  text-align: center;
+  font-size: 15px;
+  margin: 15px 0px 15px 0px;
+  padding: 10px;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid grey;
+}
+.content .thanks span {
+  font-weight: bolder;
+}
+.content .thanks a {
+  text-decoration: none;
+  color: rgb(50, 104, 145);
+  font-weight: bolder;
+}
+.content .caption {
+  text-align: start;
+  font-size: 15px;
+  color: #727272;
+}
+
+aside {
+  width: 945px;
+  margin: auto;
+}
+aside h1 {
+  font-weight: 700;
+  margin: 0;
+}
+aside .p1 {
+  margin: 0;
+  color: #666666;
+}
+aside div {
+  width: 945px;
+  height: 576px;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+aside div p {
+  width: 228px;
+  position: relative;
+  top: 135px;
+  font-size: 14px;
+  text-align: left;
+}
+aside img {
+  width: 945px;
+}
+
+.more-bloc {
+  margin: 30px;
+  padding: 200px;
+}
+.more-bloc .cards-body {
+  display: flex;
+}
+.more-bloc .cards-body .card {
+  border: none;
+  margin: 15px;
+}
+.more-bloc .cards-body .card-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: gray;
+}
+.more-bloc .cards-body .p {
+  color: gray;
+}
+.more-bloc .cards-body hr {
+  color: black;
+}
+.more-bloc .cards-body a {
+  font-family: "Times New Roman", Times, serif;
+}
+.more-bloc .cards-body a:link {
+  text-decoration: none;
+  color: black;
+}
+.more-bloc .cards-body a:link:hover {
+  opacity: 0.5;
+}
+.more-bloc .cards-body a.titre :hover {
+  text-decoration: underline;
+}
+.more-bloc .cards-body img {
+  width: 200;
+  height: 150px;
+}
+.more-bloc .cards-body a.a {
+  font-size: 1.1875rem;
+  line-height: 1.4375rem;
+}
+
+.header-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-para h1 {
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large !important;
+}
+.header-para h1 hr {
+  width: auto;
+}
+.header-para h2 {
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+  border-top: 2px solid black;
+  align-items: flex-start;
+}
+.header-para button {
+  border: 1px solid rgb(172, 170, 170);
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: small;
+  background-color: white;
+  padding: 0.5rem;
+}
+.header-para figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  align-content: center;
+  align-items: center;
+}
+.header-para figure img {
+  width: 1300px;
+  margin-top: 2rem;
+}
+.header-para figure span {
+  color: grey;
+  align-self: flex-start;
+}
+.header-para .bi {
+  width: 20px;
+}
+.header-para #centerbutton {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(60, 91, 119);
+  border: 1px solid rgb(39, 58, 77);
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 300px;
+  font-size: small;
+  color: white;
+}
+.header-para p {
+  font-family: arial;
+  width: 600px;
+}
+.header-para ul {
+  width: 600px;
+  font-family: arial;
+}
+.header-para ul li {
+  padding-top: 1rem;
+}
+.header-para ul li a {
+  color: rgb(60, 91, 119);
 }
 
 .footer-content {
@@ -52,13 +385,16 @@
   padding-left: 5px;
   border-left: 2px solid rgba(237, 233, 233, 0.913);
 }
+.footer-content .subscribe hr {
+  margin-bottom: 5px;
+}
 .footer-content h4 {
   padding-bottom: 10px;
 }
 
 footer {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
   border-top: 2px solid rgba(237, 233, 233, 0.913);
 }
 footer .footer-bot {
@@ -74,7 +410,7 @@ footer .footer-bot {
 }
 footer .footer-bot a {
   text-decoration: none;
-  color: black;
+  color: rgb(128, 124, 124);
   padding-bottom: 5px;
 }
 footer .footer-bot a:hover {
