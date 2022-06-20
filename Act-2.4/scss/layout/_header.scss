@@ -1,0 +1,26 @@
+@use "../components/buttons";
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 20px;
+  .navLinks{
+    padding-left: 15px;
+    cursor: pointer;
+    color: #000;
+    opacity: 0.75;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    &:hover{
+        text-decoration: underline;
+    }
+    .symbol{
+        :hover{
+            background-color: grey;
+        }
+    }
+  }
+
+}

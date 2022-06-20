@@ -1,0 +1,41 @@
+.navButton {
+  padding-left: 15px;
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+  border-radius: 2px;
+  line-height: 28px;
+  padding: 0 12px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+.navButton:hover {
+  background: -webkit-linear-gradient(top, #6b9ffa, #6d99e6);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+.navBar .navLinks {
+  padding-left: 15px;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.75;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+}
+.navBar .navLinks:hover {
+  text-decoration: underline;
+}
+.navBar .navLinks .symbol :hover {
+  background-color: grey;
+}/*# sourceMappingURL=main.css.map */
