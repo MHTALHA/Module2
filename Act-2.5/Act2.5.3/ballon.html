@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 >Souffler dans le ballon</h1>
+    <div class="ballon" style="display: box;width:200px;height:200px;background-color:red;border-radius:50%;margin: auto;"></div>
+
+
+    <script>
+      let nbpixel=200;
+      let colors=['red', 'green', 'blue'];
+        $(document).ready(
+            $('.ballon').on('click', function() {
+                //alert("Quelqu'un a cliqué sur le ballon!")
+                
+                for(i=0;i<=colors.length-1;i++)
+                {
+                    $(this).css('background-color',colors[i]);
+                    if(nbpixel<420){
+                         
+                        $(this).height(nbpixel);
+                        //console.log($(this).height())
+                        $(this).width(nbpixel);
+                        nbpixel+=10;
+                    }else {
+                        nbpixel=200;
+                    }
+                }
+             }
+            )
+         )
+
+
+    </script>
+    
+</body>
+</html>
