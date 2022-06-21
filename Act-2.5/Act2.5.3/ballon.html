@@ -15,25 +15,38 @@
     <script>
       let nbpixel=200;
       let colors=['red', 'green', 'blue'];
+      let i=0;
         $(document).ready(
+            
             $('.ballon').on('click', function() {
                 //alert("Quelqu'un a cliqué sur le ballon!")
                 
-                for(i=0;i<=colors.length-1;i++)
-                {
+                i++;
+                if(i==3){
+                    i=0;
+                }
+                    console.log(i);
                     $(this).css('background-color',colors[i]);
                     if(nbpixel<420){
                          
                         $(this).height(nbpixel);
-                        //console.log($(this).height())
+                        console.log($(this).height())
                         $(this).width(nbpixel);
                         nbpixel+=10;
                     }else {
                         nbpixel=200;
                     }
-                }
+                
+             }
+            ),
+
+            $('.ballon').on('.mouseleave', function() {
+                //alert("Quelqu'un a cliqué sur le ballon!")
+        
+                
              }
             )
+
          )
 
 
