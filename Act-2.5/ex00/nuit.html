@@ -8,17 +8,35 @@
 </head>
 <body id="mainBody">
    
-   
+    <div id='text' style="background-color: white;">
+    </div>
+
 <script>
-   
     var i = 0;
-    function change() {
     var doc = document.getElementById("mainBody");
+    function change() {
+    
     var color = ["black", "white"];
     doc.style.backgroundColor = color[i];
     i = (i + 1) % color.length; 
-}
-setInterval(change, 5000);
-    </script>
+    }
+    setInterval(change, 5000);
+    var now = new Date();
+    console.log(now);
+    var hours = now.getHours();
+    console.log(hours);
+    if (5 <= hours && hours < 20) {//jour
+        document.getElementById("text").innerHTML = `Jour`;
+    }else{
+        document.getElementById("text").innerHTML = `nuit`;
+    }
+    // if (doc.style.backgroundColor === "black") {
+    //     document.getElementById("text").innerHTML = `nuit`;
+    //     document.getElementById("text").style.color= "white";
+    // }else{
+    //     document.getElementById("text").innerHTML = `jour`;
+    // }
+
+</script>
 </body>
 </html>
