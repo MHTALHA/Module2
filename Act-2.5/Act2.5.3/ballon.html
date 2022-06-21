@@ -25,7 +25,7 @@
                 if(i==3){
                     i=0;
                 }
-                    console.log(i);
+                    //console.log(i);
                     $(this).css('background-color',colors[i]);
                     if(nbpixel<420){
                          
@@ -40,13 +40,21 @@
              }
             ),
 
-            $('.ballon').on('.mouseleave', function() {
+            $('.ballon').on('mouseleave',(function() {
                 //alert("Quelqu'un a cliqué sur le ballon!")
-        
-                
-             }
-            )
-
+                if (nbpixel > 200) {
+                $(this).width(nbpixel-=5);
+                $(this).height(nbpixel-=5);
+                if(i == 0){
+                    i = 2;
+                }else{
+                    i = i - 1;
+                }
+                $(this).css('background-color', colors[i]);
+            }
+ 
+        }) )
+   
          )
 
 
