@@ -8,9 +8,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <style>
-        body{
-            margin: 200px;
-        }
+        /* body{
+            height: 100vh;
+        } */
 
         .container{
             display: flex;
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="modal" style="min-height:100vh ;width: 100%;">
+    <div class="modal" >
 
     </div>
 
@@ -118,7 +118,8 @@
                 $(".modal").css('background-color','black');
                 //$(this).clone();
                 $(".modal").append($(this).clone());
-                $(".modal").children().css({"display": "block", "margin": "auto",'padding-top':'130px'});
+                $(".modal").css({"height":"100vh" ,"width": "100vw"});
+                $(".modal").children().css({"display": "block", "margin": "auto","padding-top":"130px"});
                
 
 })
